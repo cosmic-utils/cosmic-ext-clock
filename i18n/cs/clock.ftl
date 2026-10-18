@@ -1,0 +1,113 @@
+clock = Hodiny
+menu-settings = Nastavení...
+menu-about = O aplikaci Hodiny...
+settings-title = Nastavení
+settings-appearance = Vzhled
+settings-theme = Motiv
+match-desktop = Podle systému
+dark = Tmavý
+light = Světlý
+settings-reset-all = Obnovit všechna nastavení
+website = Webová stránka
+repository = Repozitář
+support = Podpora
+world-clocks = Světové hodiny
+world-clock-edit = Upravit světové hodiny
+alarms = Budíky
+timers = Časovače
+timer = Časovač
+stopwatch = Stopky
+add-city = Přidat město
+choose-city = Vyberte město
+search-cities = Hledat města
+city-added = Přidáno
+add = Přidat
+close = Zavřít
+remove = Odstranit
+save = Uložit
+edit = Upravit
+alarm-label = Popisek budíku
+alarm-hour = Hodina
+alarm-minute = Minuta
+add-alarm = Přidat budík
+alarm-new = Nový budík
+alarm-edit = Upravit budík
+alarm-repeat = Opakování
+alarm-repeat-never = Nikdy
+alarm-repeat-every-day = Každý den
+alarm-snooze = Odkládání
+alarm-snooze-duration = Délka odložení (minuty)
+alarm-snooze-button = Odložit o { $minutes } min
+alarm-snooze-summary = Odloženo o: { $minutes } min
+alarm-snooze-off = Odkládání vypnuto
+alarm-dismiss = Zrušit
+alarm-ringing = Zvoní budík
+notification-alarm-title = Zvoní budík
+cancel = Zrušit
+weekday-monday = Pondělí
+weekday-tuesday = Úterý
+weekday-wednesday = Středa
+weekday-thursday = Čtvrtek
+weekday-friday = Pátek
+weekday-saturday = Sobota
+weekday-sunday = Neděle
+weekday-short-monday = Po
+weekday-short-tuesday = Út
+weekday-short-wednesday = St
+weekday-short-thursday = Čt
+weekday-short-friday = Pá
+weekday-short-saturday = So
+weekday-short-sunday = Ne
+timer-label = Popisek časovače
+timer-minutes = Minuty
+timer-seconds = Sekundy
+timer-new = Nový časovač
+timer-edit = Upravit časovač
+add-timer = Přidat časovač
+timer-empty = Zatím nemáte žádné časovače. Začněte tím, že jeden přidáte.
+start = Spustit
+pause = Zastavit
+reset = Resetovat
+lap = Kolo
+paused = Pozastaveno
+finished = Dokončeno
+timer-ringing = Čas vypršel: zvoním
+timer-stop-ringing = Zastavit zvonění
+stopwatch-laps = Kola
+stopwatch-empty = Časy kol se objeví zde.
+local-time = Místní čas
+world-clock-same-time = Stejný čas
+yesterday = včera
+tomorrow = zítra
+desktop-keywords = hodiny;světové hodiny;budík;časovač;stopky;čas;časové pásmo;
+world-clock-relative-hours = { $sign }{ $hours }h
+world-clock-relative-hours-minutes = { $sign }{ $hours }h { $minutes }m
+ready = Připraveno
+running = Běží
+world-clock-empty = Přidejte město a porovnejte časy ve světě.
+world-clock-days-earlier =
+    o { $days } { $days ->
+        [one] den
+        [few] dny
+       *[other] dní
+    } dříve
+world-clock-days-later =
+    o { $days } { $days ->
+        [one] den
+        [few] dny
+       *[other] dní
+    } později
+desktop-comment = Sledujte čas po celém světě pomocí budíků, časovačů a stopek
+city-search-empty = Žádná odpovídající města
+notification-timer-title = Časovač skončil
+alarm-empty = Zatím nemáte žádné budíky. Přidejte budík pro místní čas.
+metainfo-summary = Vyladěné hodiny pro počítače s prostředím COSMIC a mobilní telefony
+metainfo-description = Aplikace Hodiny kombinuje světové časy, místní budíky, více časovačů a přesné stopky v responzivním rozhraní libcosmic.
+metainfo-caption-world-clocks-desktop = Čtyři světové hodiny na počítači
+metainfo-caption-world-clocks-phone = Čtyři světové hodiny na telefonu s Linuxem
+metainfo-caption-alarms-desktop = Seznam budíků na počítači
+metainfo-caption-alarms-phone = Seznam budíků na telefonu s Linuxem
+metainfo-caption-timers-desktop = Připravené, pozastavené a běžící časovače na počítači
+metainfo-caption-timers-phone = Připravené, pozastavené a běžící časovače na telefonu s Linuxem
+metainfo-caption-stopwatch-desktop = Stopky se zaznamenanými koly na počítači
+metainfo-caption-stopwatch-phone = Stopky se zaznamenanými koly na telefonu s Linuxem
