@@ -9,3 +9,4 @@ settings-reset-all = Redefinir todas as configurações
 support = Suporte
 cancel = Cancelar
 website = Website
+menu-settings = Configurações...
