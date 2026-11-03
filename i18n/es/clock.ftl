@@ -3,3 +3,7 @@ repository = Repositorio
 support = Soporte
 cancel = Cancelar
 settings-theme = Tema
+settings-title = Ajustes
+light = Claro
+dark = Oscuro
+settings-reset-all = Restablecer todos los ajustes
