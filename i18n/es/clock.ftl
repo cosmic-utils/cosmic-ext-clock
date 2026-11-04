@@ -3,3 +3,7 @@ repository = Repositorio
 support = Soporte
 cancel = Cancelar
 settings-theme = Tema
+world-clocks = Relojes mundiales
+alarms = Alarmas
+timers = Temporizadores
+stopwatch = Cronómetro
