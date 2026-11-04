@@ -258,7 +258,7 @@ fn about_widget() -> About {
         .author("Frederic Laing")
         .comments(fl!("desktop-comment"))
         .license("GPL-3.0-only")
-        .developers([("Frederic Laing", "frederic.laing.development@gmail.com")])
+        .developers([("Frederic Laing", "dev@fredfunk.tech")])
         .links([
             (fl!("website"), WEBSITE_URL),
             (fl!("repository"), REPOSITORY_URL),

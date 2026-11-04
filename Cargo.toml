@@ -7,7 +7,7 @@ license = "GPL-3.0-only"
 description = "A polished world clock, alarm, timer, and stopwatch for COSMIC"
 homepage = "https://cosmic-utils.org"
 repository = "https://github.com/cosmic-utils/cosmic-ext-clock"
-authors = ["Frederic Laing <frederic.laing.development@gmail.com>"]
+authors = ["Frederic Laing <dev@fredfunk.tech>"]
 
 [dependencies]
 clap = { version = "4.6.7", features = ["derive"] }
