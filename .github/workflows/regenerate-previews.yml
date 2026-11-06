@@ -12,14 +12,12 @@ on:
       - 'justfile'
       - 'preview/shots.conf'
       - 'preview/generate-previews.sh'
-      - 'preview/update-environment-locks.sh'
       - 'preview/capture-previews.sh'
       - 'preview/locale-policy.sh'
       - 'preview/test-localization-policy.sh'
       - 'preview/test-metadata-gallery.sh'
       - 'preview/sync-previews.sh'
       - 'preview/Containerfile'
-      - 'preview/environment.lock'
       - 'scripts/gen-metadata.py'
   workflow_dispatch:
     inputs:
@@ -65,7 +63,7 @@ jobs:
         uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: ~/preview-image.tar
-          key: preview-image-${{ hashFiles('preview/Containerfile', 'preview/*.lock', 'preview/update-environment-locks.sh') }}
+          key: preview-image-${{ hashFiles('preview/Containerfile') }}
 
       - name: Build or load container image
         run: |
@@ -191,4 +189,4 @@ jobs:
             --base main \
             --head "$branch" \
             --title 'chore: regenerate preview screenshots' \
-            --body $'## Preview screenshots\n\nThe Clock UI changed on `main`, so the committed screenshots were re-rendered in the pinned container. Please review the image diffs before merging.'
+            --body $'## Preview screenshots\n\nThe Clock UI changed on `main`, so the committed screenshots were re-rendered in the software-rendered container. Please review the image diffs before merging.'

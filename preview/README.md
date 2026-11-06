@@ -63,9 +63,9 @@
 
 ---
 
-Regenerate them with `just generate-previews`. The digest-pinned container
-verifies its package lock, then uses fixed pages and software
-rendering so captures are reproducible.
-Refresh that lock intentionally with `just update-preview-environment`.
+Regenerate them with `just generate-previews`. The Fedora 44 container uses
+fixed pages and software rendering. Fresh builds use current Fedora packages;
+CI caches the built image by Containerfile hash. Review screenshot changes
+when rebuilding because package updates can change their appearance.
 
 [Back to the project README](../README.md)

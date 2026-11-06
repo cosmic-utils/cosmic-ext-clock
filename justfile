@@ -54,9 +54,6 @@ generate-metadata:
 generate-previews *args: && generate-metadata
 	preview/generate-previews.sh {{args}}
 
-# Deliberately refresh the package lock, then verify the image.
-update-preview-environment:
-	preview/update-environment-locks.sh
 generate-icons:
     #!/usr/bin/env bash
     set -euo pipefail
