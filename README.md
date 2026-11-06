@@ -46,9 +46,9 @@ The repository retains the blueprint's Flatpak, Alpine APK, cross-compilation, m
 
 Dependabot checks Cargo dependencies and GitHub Actions daily at 06:00 UTC. libcosmic updates remain individual PRs; other Cargo minor and patch updates are grouped, while major updates stay separate. Cargo updates increase manifest requirements as well as the lockfile. Rust toolchain and Python build dependencies are checked weekly on Mondays. Updates still require review and passing CI.
 
-`rust-toolchain.toml` is the compiler-version source for CI and the musl build images. `Cargo.toml` keeps the minimum supported Rust version separately, and the deterministic preview environment retains its own package lock. `requirements-build.txt` supplies the Python dependencies for both local Flatpak source generation and CI; the local recipe uses an isolated uv environment or a virtualenv rather than arbitrary preinstalled modules.
+`rust-toolchain.toml` is the compiler-version source for CI and the musl build images. `Cargo.toml` keeps the minimum supported Rust version separately. `requirements-build.txt` supplies the Python dependencies for both local Flatpak source generation and CI; the local recipe uses an isolated uv environment or a virtualenv rather than arbitrary preinstalled modules.
 
-Container-base updates, the coherent cross CLI/image set, rustup and generator checksum pins, and Flatpak runtime/BaseApp compatibility remain reviewed maintenance tasks. Refresh the preview environment and screenshots together with `just update-preview-environment` and `just generate-previews` rather than changing its base image independently.
+Container-base updates, the coherent cross CLI/image set, rustup and generator checksum pins, and Flatpak runtime/BaseApp compatibility remain reviewed maintenance tasks. Like Camera, the preview container uses `fedora:44` and current distro packages, extracting the COSMIC theme from the repository's current `cosmic-settings` RPM. CI caches the built image by Containerfile hash. Run `just generate-previews` to regenerate screenshots and review visual changes after rebuilding: package versions are not locked, so a fresh build can change their appearance.
 
 ## License
 
